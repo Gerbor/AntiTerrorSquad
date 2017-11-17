@@ -186,88 +186,6 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!1 &33106401
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 33106405}
-  - component: {fileID: 33106404}
-  - component: {fileID: 33106403}
-  - component: {fileID: 33106402}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &33106402
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33106401}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 2fab77a1ea5391c40b07f44de1c48fee, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &33106403
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33106401}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &33106404
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33106401}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &33106405
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33106401}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40182432 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1827555791407788, guid: 5ed4b56229bc3f549b4859623eef06ad,
@@ -1142,7 +1060,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!114 &122171299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,7 +1073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!4 &122171301 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4742649758728004, guid: 5ed4b56229bc3f549b4859623eef06ad,
@@ -1176,6 +1093,7 @@ GameObject:
   - component: {fileID: 138295231}
   - component: {fileID: 138295236}
   - component: {fileID: 138295237}
+  - component: {fileID: 138295238}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1300,6 +1218,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &138295238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 138295230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63827990c3fffe40b9a65ee323f50cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons: []
 --- !u!1 &155368703 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1775262815490804, guid: 5ed4b56229bc3f549b4859623eef06ad,
@@ -1777,7 +1707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!114 &214820851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1792,7 +1722,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!65 &214820852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3419,7 +3348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!114 &606160899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3434,7 +3363,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!65 &606160900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3892,7 +3820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!114 &683830142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3907,7 +3835,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!65 &683830143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4292,7 +4219,7 @@ MonoBehaviour:
     autoFire: 0
     delayBetweenShots: 1.2
     reloadTime: 0
-    knockBackForce: 700
+    knockBackForce: 800
   weaponInfo:
     bulletCount: 0
     magCount: 0
@@ -4400,7 +4327,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!114 &829026168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4414,7 +4340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!65 &829026169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4690,7 +4616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!114 &940689718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4705,7 +4631,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!65 &940689719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6337,7 +6262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!114 &1331659355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6352,7 +6277,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!65 &1331659356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6703,7 +6627,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!114 &1403987765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6717,7 +6640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!65 &1403987766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9612,7 +9535,6 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   rigidBodies: []
-  testCube: {fileID: 33106401}
 --- !u!114 &1862855332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9626,7 +9548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilianStats:
     speed: 3
-    maxHealth: 45
+    maxHealth: 20
 --- !u!65 &1862855333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11013,7 +10935,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 188b10f4d9e3f1246b275511e7f93b73, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 188b10f4d9e3f1246b275511e7f93b73, type: 3}

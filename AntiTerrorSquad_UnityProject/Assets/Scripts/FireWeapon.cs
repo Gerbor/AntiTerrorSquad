@@ -80,7 +80,7 @@ public class FireWeapon : MonoBehaviour {
         {
             if (hit.transform.GetComponent<AI_Health>())
             {
-                print("Hit " + hit.transform.name);
+            //    print("Hit " + hit.transform.name);
                 hit.transform.GetComponent<AI_Health>().TakeHit(weaponStats.damageOutput, hit, weaponStats.knockBackForce);
             }
         }

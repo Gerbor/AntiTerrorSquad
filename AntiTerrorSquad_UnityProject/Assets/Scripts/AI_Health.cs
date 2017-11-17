@@ -9,7 +9,6 @@ public class AI_Health : MonoBehaviour {
     private bool dead;
     public Rigidbody[] rigidBodies;
     private Animator anim;
-    public GameObject testCube;
 
     private void Awake()
     {
