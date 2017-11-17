@@ -9,8 +9,7 @@ public class Civilian : MonoBehaviour {
     public class CivilianStats
     {
         public float speed = 3;
-        public int maxHealth = 45;
-        public int characterId;
+        public int maxHealth = 20;
     }
 
     public CivilianStats civilianStats = new CivilianStats();
@@ -18,6 +17,5 @@ public class Civilian : MonoBehaviour {
     private void Awake()
     {
         this.GetComponent<AI_Health>().maxHealth = civilianStats.maxHealth;
-        this.GetComponent<AI_Health>().characterId = civilianStats.characterId;
     }
 }

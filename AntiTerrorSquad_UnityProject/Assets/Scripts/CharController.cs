@@ -68,6 +68,7 @@ public class CharController : MonoBehaviour
 
     private void ButtonInput()
     {
+        /*
         if (Input.GetButtonDown("Cancel"))
         {
             if (!paused)
@@ -81,6 +82,7 @@ public class CharController : MonoBehaviour
                 MouseLock.instance.CheckLock(true);
             }
         }
+        */
     }
 
     private void CheckSprint()
