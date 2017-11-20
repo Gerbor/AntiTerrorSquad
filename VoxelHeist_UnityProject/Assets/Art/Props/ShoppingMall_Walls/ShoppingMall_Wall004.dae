@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.8.19
+</authoring_tool>
+</contributor>
+<created>2017-11-17T22:54:43</created>
+<modified>2017-11-17T22:54:43</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Z_UP</up_axis>
+</asset>
+<library_images>
+<image id="ShoppingMall_Wall004_texture0-image" name="ShoppingMall_Wall004_texture0-image">
+<init_from>file://ShoppingMall_Wall004_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="ShoppingMall_Wall004_texture0-surface">
+<surface type="2D">
+<init_from>ShoppingMall_Wall004_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="ShoppingMall_Wall004_texture0-sampler">
+<sampler2D>
+<source>ShoppingMall_Wall004_texture0-surface</source>
+<wrap_s>WRAP</wrap_s>
+<wrap_t>WRAP</wrap_t>
+<minfilter>NEAREST</minfilter>
+<magfilter>NEAREST</magfilter>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="ShoppingMall_Wall004_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh-0" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-0-positions">
+<float_array count="84" id="Plane-tex-mesh-0-positions-array">-40 -4 40 -40 4 40 -40 4 20 -40 -4 20 -40 -4 -14 -40 4 -14 -40 4 -32 -40 -4 -32 -40 -6 -32 -40 6 -32 -40 6 -40 -40 -6 -40 -32 -4 20 -32 4 20 -32 4 -14 -32 -4 -14 40 -4 40 40 4 40 40 4 -32 40 -4 -32 40 -6 -32 40 6 -32 40 6 -40 40 -6 -40 -32 -4 40 -32 -4 -32 -32 4 40 -32 4 -32</float_array>
+<technique_common>
+<accessor count="28" source="#Plane-tex-mesh-0-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-0-uvs">
+<float_array count="240" id="Plane-tex-mesh-0-uvs-array">0.3577299 0.85228693 0.3577299 0.89772016 0.4390117 0.89772016 0.52031887 0.89771307 0.52031887 0.85227984 0.43903708 0.85227984 0.6260226 0.511378 0.6260226 0.556811 0.6991744 0.556811 0.7073108 0.51134926 0.7073108 0.46591628 0.63415897 0.46591628 0.43902978 0.7613806 0.43902978 0.829537 0.47153392 0.829537 0.6585312 0.31816483 0.6585312 0.2500085 0.62602705 0.2500085 0.3577301 0.9431954 0.3577301 0.9886296 0.4959219 0.9886296 0.552839 0.96589553 0.552839 0.92046136 0.4146472 0.92046136 0.3170798 0.51137674 0.3170798 0.55681163 0.6097428 0.55681163 0.30080637 0.09089601 0.30080637 0.045461085 0.008143379 0.045461085 0.5935013 0.375017 0.5935013 0.44317332 0.6260055 0.44317332 0.59349054 0.26134664 0.59349054 0.1931903 0.5609864 0.1931903 0.28455922 0.4204686 0.28455922 0.48862934 0.6097433 0.48862934 0.5772294 0.44316775 0.5772294 0.37500703 0.2520453 0.37500703 0.56911147 0.9431979 0.56911147 0.9886283 0.60161453 0.9886283 0.70731133 0.6249839 0.70731133 0.5795535 0.67480826 0.5795535 0.6666743 0.97728026 0.6666743 0.9886326 0.99185455 0.9886326 0.6422688 0.09090158 0.6422688 0.07954921 0.3170885 0.07954921 0.31708086 0.045462053 0.31708086 0.05681443 0.6422611 0.05681443 0.33332565 0.022719765 0.33332565 0.01136739 0.008145428 0.01136739 0.18699853 0.3068312 0.18699853 0.35226622 0.5121818 0.35226622 0.60974944 0.3295324 0.60974944 0.28409743 0.28456616 0.28409743 0.35772932 0.64774334 0.35772932 0.69317377 0.3902324 0.69317377 0.26828694 0.45452937 0.26828694 0.40909895 0.23578386 0.40909895 0.00813583 0.57956153 0.00813583 0.9886283 0.30080152 0.9886283 0.34145766 0.9886203 0.34145766 0.5795535 0.048791986 0.5795535 0.66667175 0.8409268 0.66667175 0.95453656 0.69917685 0.95453656 0.707312 0.8636186 0.707312 0.7500089 0.6748069 0.7500089 0.6666718 0.62501764 0.6666718 0.7272639 0.6991767 0.7272639 0.6585314 0.4431642 0.6585314 0.34091792 0.6260265 0.34091792 0.12195788 0.21592212 0.12195788 0.26135713 0.44714114 0.26135713 0.5447088 0.23862334 0.5447088 0.19318834 0.21952552 0.19318834 0.00813583 0.14774334 0.00813583 0.55681014 0.30080152 0.55681014 0.65040076 0.9886203 0.65040076 0.5795535 0.35773507 0.5795535 0.35772866 0.7159268 0.35772866 0.82953656 0.39023376 0.82953656 0.42275915 0.82952774 0.42275915 0.71591794 0.39025405 0.71591794 0.6748019 0.3409267 0.6748019 0.44317302 0.7073068 0.44317302 0.7073119 0.34089148 0.7073119 0.23864517 0.674807 0.23864517 0.056917228 0.12501304 0.056917228 0.17044804 0.3821005 0.17044804 0.56096894 0.15907788 0.56096894 0.11364288 0.23578568 0.11364288</float_array>
+<technique_common>
+<accessor count="120" source="#Plane-tex-mesh-0-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-0-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-0-positions"/>
+</vertices>
+<triangles count="40" material="Plane-tex-mesh-0-lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-0-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-0-uvs"/>
+<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 8 12 9 13 10 14 10 15 11 16 8 17 12 18 13 19 14 20 14 21 15 22 12 23 17 25 16 24 18 26 19 28 18 27 16 29 21 31 20 30 22 32 23 34 22 33 20 35 22 37 23 36 10 38 11 40 10 39 23 41 13 43 12 42 2 44 3 46 2 45 12 47 20 48 19 49 7 50 7 51 8 52 20 53 18 54 21 55 9 56 9 57 6 58 18 59 16 60 17 61 1 62 1 63 0 64 16 65 15 66 14 67 5 68 5 69 4 70 15 71 19 72 16 73 24 74 24 75 25 76 19 77 12 78 24 79 0 80 0 81 3 82 12 83 25 84 15 85 4 86 4 87 7 88 25 89 23 90 20 91 8 92 8 93 11 94 23 95 17 97 18 96 26 98 27 100 26 99 18 101 26 103 13 102 1 104 2 106 1 105 13 107 14 109 27 108 5 110 6 112 5 111 27 113 21 115 22 114 9 116 10 118 9 117 22 119</p>
+</triangles>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="shoppingmall_wall004.merged" name="ShoppingMall_Wall004.Merged" type="NODE">
+<translate sid="location">0.05 -0.15 1.95</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry name="Merged" sid="shoppingmall_wall004.merged" url="#Plane-tex-mesh-0">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>

@@ -72,7 +72,7 @@ public class FireWeapon : MonoBehaviour {
     {
         weaponInfo.onCoolDown = true;
         StartCoroutine(WeaponCooler());
-
+        Instantiate(MuzzleFlares.instance.flares[0], settings.bulletExit.transform);
         Vector3 fwd = settings.bulletExit.transform.TransformDirection(Vector3.forward);
         Debug.DrawRay(settings.bulletExit.transform.position, fwd * weaponStats.range, Color.green);
         RaycastHit hit;
